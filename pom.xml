@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.codurance</groupId>
-    <artifactId>spring-practice</artifactId>
+    <artifactId>springpractice</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>spring-practice</name>
+    <name>springpractice</name>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -41,7 +41,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>spring-practice</finalName>
+        <finalName>springpractice</finalName>
     </build>
 </project>
-

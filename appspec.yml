@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/web-app
+    destination: /opt/springpractice
 permissions:
-  - object: /opt/web-app
+  - object: /opt/springpractice
     pattern: "**"
     mode: 500
     type:

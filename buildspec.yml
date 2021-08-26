@@ -10,7 +10,7 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/spring-practice.jar
+    - target/springpractice.jar
     - deploy/*
     - appspec.yml
   discard-paths: true
