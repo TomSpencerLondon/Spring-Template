@@ -1,0 +1,26 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/web-app
+permissions:
+  - object: /opt/web-app
+    pattern: "**"
+    mode: 500
+    type:
+      - file
+hooks:
+  ApplicationStop:
+    - location: stop.sh
+      timeout: 60
+  BeforeInstall:
+    - location: before_install.sh
+      timeout: 60
+  AfterInstall:
+    - location: after_install.sh
+      timeout: 60
+  ApplicationStart:
+    - location: start.sh
+      timeout: 60
+  ValidateService:
+    - location: basic_health_check.sh
